@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DocumentGeneratorJudiciary</title>
+    <title>Document Generator Judiciary</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
+
+    <p style="color: blue"><%= notice %></p>
+    <p class="color: red"><%= alert %></p>
+
+
     <%= yield %>
   </body>
 </html>
