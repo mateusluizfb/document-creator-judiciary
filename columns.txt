@@ -1,0 +1,50 @@
+Colunas:
+
+Número Processo
+Ano Processo
+Ação
+Data audiencia
+Hora Audiencia
+Tipo Audiencia
+Justiça Gratuita
+Gẽnero Autor
+Representante CPF
+Endereço Autor
+CEP cidade Autor
+Assistente PA
+Gênero Parte Réos
+Nome Réu
+Endereço Réu
+Cep Cidade Réu
+Representante PR
+Assitente PR
+Func Público
+Conta Ag Banco
+Pedido Inicial
+Profissão Alimentante
+Empregador Réu
+End Empregador
+Cep Cidade Emp
+Traramento Oficio
+Tipo Setor Pagador
+Empregador 2
+Cep Cidade Emp 2
+Tratamento Oficio 2
+Tipo Setor Pagador 2
+Func Publ Emprega 2
+
+Cpf RG Rep PA
+Cpf RG Parte Ré
+Número Benef Inss Of1
+Número Benef Inss Of2
+Gênero Juiz
+Nome Juiz
+Gênero Promotor
+Nome promotor
+Gẽnero Adv Autor
+Advogado Autor
+Gênero Adv PR
+Advogado Réu
+Parecer
+
+rails g model Process nu_process:string year_process:date action:string court_hearing_date:date court_hearing_time:time court_heearing_type:string free_justice:string author_gender:string cpf_represetant:string author_address:string cep_author_city:string assintant_pa:string gender_part_defendant:string defendent_gender:string defendent_name:string defendent_address:string cep_defendent_city:string pr_representant:strng pr_assitant:string func_public:string bank_agency:string bank_account:string initial_order:string occupation:string defendant_employer:string employer_address:string cep_employer_city:string occupational_treatment:string paying_sector_type:string employer_2:string cep_employer_city_2:string occupational_treatment_2:string paying_sector_type:string func_public_employer:string cpf_rg_rep_pa:string cpf_rg_part_defendent:string number_benef_inss_of1:string number_benef_inss_of2:string judge_gender:string judge_name:string prosecutor_gender:string prosecutor_name:string lawyer_gender_author:string lawyer_author:string lawyer_gender_pr:string lawyer_defendent:string opnion:text

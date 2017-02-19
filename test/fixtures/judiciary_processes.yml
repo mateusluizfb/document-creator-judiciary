@@ -1,0 +1,99 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nu_process: MyString
+  year_process: 2017-02-19
+  action: MyString
+  court_hearing_date: 2017-02-19
+  court_hearing_time: 2017-02-19 17:21:23
+  court_heearing_type: MyString
+  free_justice: MyString
+  author_gender: MyString
+  cpf_represetant: MyString
+  author_address: MyString
+  cep_author_city: MyString
+  assintant_pa: MyString
+  gender_part_defendant: MyString
+  defendent_gender: MyString
+  defendent_name: MyString
+  defendent_address: MyString
+  cep_defendent_city: MyString
+  pr_representant: 
+  pr_assitant: MyString
+  func_public: MyString
+  bank_agency: MyString
+  bank_account: MyString
+  initial_order: MyString
+  occupation: MyString
+  defendant_employer: MyString
+  employer_address: MyString
+  cep_employer_city: MyString
+  occupational_treatment: MyString
+  paying_sector_type: MyString
+  employer_2: MyString
+  cep_employer_city_2: MyString
+  occupational_treatment_2: MyString
+  paying_sector_type: MyString
+  func_public_employer: MyString
+  cpf_rg_rep_pa: MyString
+  cpf_rg_part_defendent: MyString
+  number_benef_inss_of1: MyString
+  number_benef_inss_of2: MyString
+  judge_gender: MyString
+  judge_name: MyString
+  prosecutor_gender: MyString
+  prosecutor_name: MyString
+  lawyer_gender_author: MyString
+  lawyer_author: MyString
+  lawyer_gender_pr: MyString
+  lawyer_defendent: MyString
+  opnion: MyText
+
+two:
+  nu_process: MyString
+  year_process: 2017-02-19
+  action: MyString
+  court_hearing_date: 2017-02-19
+  court_hearing_time: 2017-02-19 17:21:23
+  court_heearing_type: MyString
+  free_justice: MyString
+  author_gender: MyString
+  cpf_represetant: MyString
+  author_address: MyString
+  cep_author_city: MyString
+  assintant_pa: MyString
+  gender_part_defendant: MyString
+  defendent_gender: MyString
+  defendent_name: MyString
+  defendent_address: MyString
+  cep_defendent_city: MyString
+  pr_representant: 
+  pr_assitant: MyString
+  func_public: MyString
+  bank_agency: MyString
+  bank_account: MyString
+  initial_order: MyString
+  occupation: MyString
+  defendant_employer: MyString
+  employer_address: MyString
+  cep_employer_city: MyString
+  occupational_treatment: MyString
+  paying_sector_type: MyString
+  employer_2: MyString
+  cep_employer_city_2: MyString
+  occupational_treatment_2: MyString
+  paying_sector_type: MyString
+  func_public_employer: MyString
+  cpf_rg_rep_pa: MyString
+  cpf_rg_part_defendent: MyString
+  number_benef_inss_of1: MyString
+  number_benef_inss_of2: MyString
+  judge_gender: MyString
+  judge_name: MyString
+  prosecutor_gender: MyString
+  prosecutor_name: MyString
+  lawyer_gender_author: MyString
+  lawyer_author: MyString
+  lawyer_gender_pr: MyString
+  lawyer_defendent: MyString
+  opnion: MyText

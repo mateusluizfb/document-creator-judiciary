@@ -1,0 +1,2 @@
+class JudiciaryProcess < ApplicationRecord
+end
