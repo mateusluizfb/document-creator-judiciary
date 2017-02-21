@@ -7,13 +7,26 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.delete_all
-
 User.create([
   {
       email: 'user@user.com',
       password: '123456'
   }
-  ])
-
+  ]);
 
 p "#{User.count} users created"
+
+JudiciaryProcess.delete_all
+JudiciaryProcess.create([
+  {
+    nu_process: '1'
+  },
+  {
+    nu_process: '2'
+  },
+  {
+    nu_process: '3'
+  }
+  ])
+
+p "#{JudiciaryProcess.count} processes count"

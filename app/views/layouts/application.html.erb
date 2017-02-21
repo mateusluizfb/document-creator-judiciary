@@ -9,23 +9,12 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-      <div class="pull-right">
-        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-sm btn-danger'  %>
-      </div>
-    </div>
 
-    <p style="color: blue"><%= notice %></p>
-    <p class="color: red"><%= alert %></p>
-
+    <%= render 'layouts/navbar'%>
 
     <%= yield %>
 
-    <div class="container-fluid">
-      <div class="pull-right">
-        <p>Achou algum bug? Algo está errado? <a href="#"> Reporte aqui</a> </p>
-      </div>
-    </div>
+    <%= render 'layouts/footer'%>
 
   </body>
 </html>

@@ -8,51 +8,117 @@
 
     <div class="panel-body">
 
-    <div class="table-responsive">
+      <div class="table-responsive">
 
-      <table class="table">
-        <thead>
-          <th>#</th>
-          <th>Número Processo</th>
-          <th>Ano Processo</th>
-          <th>Ação</th>
-          <th>Data audiencia</th>
-          <th>Hora Audiencia</th>
-          <th>Tipo Audiencia</th>
-          <th>Justiça Gratuita</th>
-          <th>Gẽnero Autor</th>
-          <th>Representante CPF</th>
-          <th>Endereço Autor</th>
-          <th>CEP cidade Autor</th>
-          <th>Assistente PA</th>
-          <th>Gênero Parte Réos</th>
-          <th>Nome Réu</th>
-          <th>Endereço Réu</th>
-          <th>Cep Cidade Réu</th>
-          <th>Representante PR</th>
-          <th>Assitente PR</th>
-          <th>Func Público</th>
-          <th>Conta Ag Banco</th>
-          <th>Pedido Inicial</th>
-          <th>Profissão Alimentante</th>
-          <th>Empregador Réu</th>
-          <th>End Empregador</th>
-          <th>Cep Cidade Emp</th>
-          <th>Traramento Oficio</th>
-          <th>Tipo Setor Pagador</th>
-          <th>Empregador 2</th>
-          <th>Cep Cidade Emp 2</th>
-          <th>Tratamento Oficio 2</th>
-          <th>Tipo Setor Pagador 2</th>
-          <th>Func Publ Emprega 2</th>
-        </thead>
-        <tbody>
+        <table class="table table-bordered" style="white-space: nowrap;">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Número Processo</th>
+              <th>Ano Processo</th>
+              <th>Ação</th>
+              <th>Data audiencia</th>
+              <th>Hora Audiencia</th>
+              <th>Tipo Audiencia</th>
+              <th>Justiça Gratuita</th>
+              <th>Gẽnero Autor</th>
+              <th>Representante CPF</th>
+              <th>Endereço Autor</th>
+              <th>CEP cidade Autor</th>
+              <th>Assistente PA</th>
+              <th>Gênero Parte Réos</th>
+              <th>Nome Réu</th>
+              <th>Endereço Réu</th>
+              <th>Cep Cidade Réu</th>
+              <th>Representante PR</th>
+              <th>Assitente PR</th>
+              <th>Func Público</th>
+              <th>Conta Ag Banco</th>
+              <th>Pedido Inicial</th>
+              <th>Profissão Alimentante</th>
+              <th>Empregador Réu</th>
+              <th>End Empregador</th>
+              <th>Cep Cidade Emp</th>
+              <th>Traramento Oficio</th>
+              <th>Tipo Setor Pagador</th>
+              <th>Empregador 2</th>
+              <th>Cep Cidade Emp 2</th>
+              <th>Tratamento Oficio 2</th>
+              <th>Tipo Setor Pagador 2</th>
+              <th>Func Publ Emprega 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @processes.each_with_index do |p, index| %>
+              <tr>
+                <td>
+                  <div class="btn-group-sm">
+                    <button type="button" name="button" class="btn btn-info">
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                    </button>
+                    <button type="button" name="button" class="btn btn-info">
+                      <span class="glyphicon glyphicon-list-alt"></span>
+                    </button>
+                    <button type="button" name="button" class="btn btn-warning">
+                      <span class="glyphicon glyphicon-edit"></span>
+                    </button>
+                    <button type="button" name="button" class="btn btn-danger">
+                      <span class="glyphicon glyphicon-trash"></span>
+                    </button>
+                  </div>
+                </td>
+                <td><%= p.nu_process %></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <select class="form-control">
+                    <option value="selecione" selected="selected"></option>
+                    <option value="CONCILIAÇÃO">CONCILIAÇÃO</option>
+                    <option value="INSTRUÇÃO E JULGAMENTO">INSTRUÇÃO E JULGAMENTO</option>
+                    <option value="JUSTIFICAÇÃO">JUSTIFICAÇÃO</option>
+                    <option value="CONCILIAÇÃO">CONCILIAÇÃO</option>
+                    <option value="INSTRUÇÃO E JULGAMENTO">INSTRUÇÃO E JULGAMENTO</option>
+                  </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            <% end %>
 
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     </div>
-
-
+    <div class="panel-footer">
+      <div class="container-fluid">
+        <button type="button" name="button" class="btn btn-success">Cadastrar processos</button>
+      </div>
     </div>
   </div>
 
