@@ -6,4 +6,12 @@ class JudiciaryProcessController < ApplicationController
     @processes = JudiciaryProcess.all
   end
 
+  def new
+    @process = JudiciaryProcess.new
+  end
+
+  def create
+
+  end
+
 end

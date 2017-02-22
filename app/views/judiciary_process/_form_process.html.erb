@@ -1,0 +1,75 @@
+<%= form_for :process do |f|%>
+
+  <div class="form-group">
+    <%= f.label :nu_process, 'Número do processo' %>
+    <%= f.text_field :nu_process, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :year_process, 'Ano do processo'%>
+    <%= f.text_field :year_process, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :action, 'Ação'%>
+    <%= f.text_field :action, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :court_hearing_date, 'Data da audiência' %>
+    <%= f.date_field :court_hearing_date, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :court_hearing_time, 'Horário da audiência' %>
+    <%= f.time_field :court_hearing_time, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cpf_represetant, 'CPF do Representante' %>
+    <%= f.text_field :cpf_represetant, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :gender_part_defendant, 'Genêro Parte Réos'%>
+    <%= f.text_field :gender_part_defendant, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :defendent_gender, 'Genêro do Réu'%>
+    <%= f.text_field :defendent_gender, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :defendent_name, 'Nome do Réu'%>
+    <%= f.text_field :defendent_name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :judge_gender, 'Genêro do Juíz'%>
+    <%= f.text_field :judge_gender, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :judge_name, 'Nome do Juíz'%>
+    <%= f.text_field :judge_name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :prosecutor_gender, 'Genêro do Promotor'%>
+    <%= f.text_field :prosecutor_gender, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :prosecutor_name, 'Nome do Promotor'%>
+    <%= f.text_field :prosecutor_name, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :lawyer_gender_author, 'Genêro Adv Autor'%>
+    <%= f.text_field :lawyer_gender_author, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :lawyer_author, 'Advogado Autor'%>
+    <%= f.text_field :lawyer_author, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :lawyer_gender_pr, 'Genêro Adv PR'%>
+    <%= f.text_field :lawyer_gender_pr, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.label :lawyer_defendent, 'Advogado Réu'%>
+    <%= f.text_field :lawyer_defendent, class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit value: 'Salvar processo', class: 'btn btn-success' %>
+  </div>
+
+<% end %>
