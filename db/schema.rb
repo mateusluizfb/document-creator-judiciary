@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170221225102) do
+ActiveRecord::Schema.define(version: 20170222215705) do
 
   create_table "judiciary_processes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "nu_process"
-    t.date     "year_process"
+    t.string   "year_process"
     t.string   "action"
     t.date     "court_hearing_date"
     t.time     "court_hearing_time"

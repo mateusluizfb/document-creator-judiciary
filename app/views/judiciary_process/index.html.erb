@@ -54,10 +54,10 @@
                   </div>
                 </td>
                 <td><%= p.nu_process %></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><%= p.year_process %></td>
+                <td><%= p.action %></td>
+                <td><%= p.court_hearing_date %></td>
+                <td><%= p.court_hearing_time %></td>
                 <td>
                   <select class="form-control">
                     <option value="selecione" selected="selected"></option>
@@ -68,18 +68,18 @@
                     <option value="INSTRUÇÃO E JULGAMENTO">INSTRUÇÃO E JULGAMENTO</option>
                   </select>
                 </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td><%= p.cpf_represetant %></td>
+                <td><%= p.gender_part_defendant %></td>
+                <td><%= p.defendent_gender %></td>
+                <td><%= p.defendent_name %></td>
+                <td><%= p.judge_gender %></td>
+                <td><%= p.judge_name %></td>
+                <td><%= p.prosecutor_gender %></td>
+                <td><%= p.prosecutor_name %></td>
+                <td><%= p.lawyer_gender_author %></td>
+                <td><%= p.lawyer_author %></td>
+                <td><%= p.lawyer_gender_pr %></td>
+                <td><%= p.lawyer_defendent %></td>
               </tr>
             <% end %>
           </tbody>
