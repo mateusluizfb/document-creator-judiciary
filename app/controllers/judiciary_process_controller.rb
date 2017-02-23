@@ -12,16 +12,20 @@ class JudiciaryProcessController < ApplicationController
     @process = JudiciaryProcess.new
   end
 
-  # POST /processes/new
+  # POST /processes
   def create
     @process = JudiciaryProcess.new process_params
-
     if @process.save
       redirect_to  processes_path
     else
       render :new
     end
+  end
 
+  # DELETE /processes/:id
+  def destroy
+    JudiciaryProcess.destroy params[:id]
+    redirect_to processes_path
   end
 
   private
