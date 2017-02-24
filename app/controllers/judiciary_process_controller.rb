@@ -7,6 +7,9 @@ class JudiciaryProcessController < ApplicationController
     @processes = JudiciaryProcess.all
   end
 
+  def show
+  end
+
   # GET /processes/new
   def new
     @process = JudiciaryProcess.new
@@ -26,6 +29,17 @@ class JudiciaryProcessController < ApplicationController
   def destroy
     JudiciaryProcess.destroy params[:id]
     redirect_to processes_path
+  end
+
+  def update
+  end
+
+  def edit
+    # TODO ENTENDER ISSO
+    respond_to do |f|
+      f.html
+      f.js
+    end
   end
 
   private
