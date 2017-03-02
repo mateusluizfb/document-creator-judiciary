@@ -1,4 +1,4 @@
-<%= form_for @process, method: :post, url: processes_path do |f|%>
+<%= form_for @process, method: :patch, url: process_path(@process)  do |f| %>
 
   <div class="form-group">
     <%= f.label :nu_process, 'Número do processo' %>
@@ -70,7 +70,12 @@
   </div>
 
   <div class="form-group">
-    <%= f.submit value: 'Salvar processo', class: 'btn btn-success' %>
+
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+    <%= f.submit value: 'Atualizar', class: 'btn btn-primary' %>
   </div>
 
 <% end %>

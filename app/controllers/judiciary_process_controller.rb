@@ -31,13 +31,19 @@ class JudiciaryProcessController < ApplicationController
     redirect_to processes_path
   end
 
+  # PATCH & PUT /processes/:id
   def update
+    if JudiciaryProcess.update params[:id], process_params
+      redirect_to processes_path
+    else
+      render :edit
+    end
   end
 
+  # EDIR /processes/:id/edit
   def edit
-    # TODO ENTENDER ISSO
+    @process = JudiciaryProcess.find params[:id];
     respond_to do |f|
-      f.html
       f.js
     end
   end
@@ -45,7 +51,7 @@ class JudiciaryProcessController < ApplicationController
   private
 
   def process_params
-    params.require(:process).permit!
+    params.require(:judiciary_process).permit!
   end
 
 end
