@@ -39,12 +39,9 @@
               <tr>
                 <td>
                   <div class="btn-group-sm">
-                    <button type="button" name="button" class="btn btn-info">
+                    <%= link_to term_path(id: p.id), format: :docx, class: 'btn btn-info' do %>
                       <span class="glyphicon glyphicon-list-alt"></span>
-                    </button>
-                    <button type="button" name="button" class="btn btn-info">
-                      <span class="glyphicon glyphicon-list-alt"></span>
-                    </button>
+                    <% end %>
                     <%= link_to edit_process_path(p), class: 'btn btn-warning', remote: true, data: {toggle: "modal", target: "#myModal"}  do %>
                       <span class="glyphicon glyphicon-edit"></span>
                     <% end %>
@@ -60,16 +57,7 @@
                 <td><%= p.action %></td>
                 <td><%= p.court_hearing_date %></td>
                 <td><%= p.court_hearing_time %></td>
-                <td>
-                  <select class="form-control">
-                    <option value="selecione" selected="selected"></option>
-                    <option value="CONCILIAÇÃO">CONCILIAÇÃO</option>
-                    <option value="INSTRUÇÃO E JULGAMENTO">INSTRUÇÃO E JULGAMENTO</option>
-                    <option value="JUSTIFICAÇÃO">JUSTIFICAÇÃO</option>
-                    <option value="CONCILIAÇÃO">CONCILIAÇÃO</option>
-                    <option value="INSTRUÇÃO E JULGAMENTO">INSTRUÇÃO E JULGAMENTO</option>
-                  </select>
-                </td>
+                <td><%= p.court_heearing_type%></td>
                 <td><%= p.cpf_represetant %></td>
                 <td><%= p.gender_part_defendant %></td>
                 <td><%= p.defendent_gender %></td>
