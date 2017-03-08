@@ -40,7 +40,10 @@
                 <td>
                   <div class="btn-group-sm">
                     <%= link_to term_path(id: p.id, format: :docx), class: 'btn btn-info' do %>
-                      <span class="glyphicon glyphicon-list-alt"></span>
+                      <p>Termo</p>
+                    <% end %>
+                    <%= link_to schedule_path(id: p.id, format: :docx), class: 'btn btn-info' do %>
+                      <p>Pauta</p>
                     <% end %>
                     <%= link_to edit_process_path(p), class: 'btn btn-warning', remote: true, data: {toggle: "modal", target: "#myModal"}  do %>
                       <span class="glyphicon glyphicon-edit"></span>
