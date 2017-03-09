@@ -33,10 +33,8 @@ class DocumentGeneratorController < ApplicationController
       f.docx do
         doc = DocxReplace::Doc.new("#{Rails.root}/lib/docx_templates/termo.docx", "#{Rails.root}/tmp")
 
-        doc.replace("numeroprocesso", @process.nu_process)
-        doc.replace("anoprocesso", @process.year_process)
-        doc.replace("numeroprocesso2", @process.nu_process)
-        doc.replace("anoprocesso2", @process.year_process)
+        doc.replace("numero", @process.nu_process, true)
+        doc.replace("ano", @process.year_process, true)
         doc.replace("acao", @process.action)
         doc.replace("nomeAutor", @process.prosecutor_name)
         doc.replace("nomeReu", @process.defendent_name)
