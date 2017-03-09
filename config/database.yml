@@ -14,10 +14,10 @@ test:
   username: mateusluizfb
   password:
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: database-production
-#   pool: 5
-#   username:
-#   password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: database-production
+  pool: 5
+  username: mateusluizfb
+  password:
