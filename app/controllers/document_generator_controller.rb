@@ -7,11 +7,10 @@ class DocumentGeneratorController < ApplicationController
     respond_to do |f|
       f.docx do
         doc = DocxReplace::Doc.new("#{Rails.root}/lib/docx_templates/pauta.docx", "#{Rails.root}/tmp")
-
         doc.replace("dataAudiencia", @process.court_hearing_date)
-        doc.replace("$horaAudiencia$", @process.court_hearing_time)
-        doc.replace("valorAnterior", "")
-        doc.replace("anoProcesso", @process.year_process)
+        doc.replace("hora", @process.court_hearing_time)
+        doc.replace("valorAnterior", "COLOCAR_VALOR_AQUI")
+        doc.replace("ano", @process.year_process)
         doc.replace("numeroProcesso", @process.nu_process)
         doc.replace("acao", @process.action)
         doc.replace("nomeAutor", @process.prosecutor_name)
@@ -34,8 +33,10 @@ class DocumentGeneratorController < ApplicationController
       f.docx do
         doc = DocxReplace::Doc.new("#{Rails.root}/lib/docx_templates/termo.docx", "#{Rails.root}/tmp")
 
-        doc.replace("numeroProcesso", @process.nu_process)
-        doc.replace("anoProcesso", @process.year_process)
+        doc.replace("numeroprocesso", @process.nu_process)
+        doc.replace("anoprocesso", @process.year_process)
+        doc.replace("numeroprocesso2", @process.nu_process)
+        doc.replace("anoprocesso2", @process.year_process)
         doc.replace("acao", @process.action)
         doc.replace("nomeAutor", @process.prosecutor_name)
         doc.replace("nomeReu", @process.defendent_name)
