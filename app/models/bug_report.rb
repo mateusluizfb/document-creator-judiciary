@@ -8,7 +8,7 @@ class BugReport < MailForm::Base
     {
       to: 'mateuslfreitasb@gmail.com',
       subject: 'Document Generator Bug Report',
-      from: %(<#{email}>)
+      from: %("nome teste" <#{email}>)
     }
   end
 
