@@ -42,7 +42,7 @@ class JudiciaryProcessController < ApplicationController
 
   # EDIR /processes/:id/edit
   def edit
-    @process = JudiciaryProcess.find params[:id];
+    @process = JudiciaryProcess.find params[:id]
     respond_to do |f|
       f.js
     end
