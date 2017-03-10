@@ -50,6 +50,9 @@ gem 'docx_replace'
 # Mailer form gem
 gem 'mail_form'
 
+# Figaro for ENV variables
+gem "figaro"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
