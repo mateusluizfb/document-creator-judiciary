@@ -11,8 +11,14 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
+  # config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+        api_key:  ENV['mg_api_key'],
+        domain:   ENV['mg_domain']
+  }
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -56,6 +62,7 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "document-generator-judiciary_#{Rails.env}"
   config.action_mailer.perform_caching = false
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
