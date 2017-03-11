@@ -10,10 +10,8 @@ class BugReportsController < ApplicationController
   end
 
   def create
-    @bug_report = BugReport.new params[:bug_report]
-    if @bug_report.deliver
-        redirect_to  processes_path
-    end
+    BugReportMailer.send_message params[:bug_report]
+    redirect_to  processes_path
   end
 
 end
