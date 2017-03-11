@@ -14,11 +14,11 @@ Rails.application.configure do
   # config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-        api_key:  ENV['mg_api_key'],
-        domain:   ENV['mg_domain']
-  }
+  # config.action_mailer.delivery_method = :mailgun
+  # config.action_mailer.mailgun_settings = {
+  #       api_key:  ENV['mg_api_key'],
+  #       domain:   ENV['mg_domain']
+  # }
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
