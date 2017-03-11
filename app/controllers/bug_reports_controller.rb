@@ -10,8 +10,16 @@ class BugReportsController < ApplicationController
   end
 
   def create
-    BugReportMailer.send_message params[:bug_report]
+    @bug_report = BugReport.new bug_report_params
+
+    BugReportMailer.send_message(@bug_report).deliver
     redirect_to  processes_path
+  end
+
+  private
+
+  def bug_report_params
+    params.require(:bug_report).permit!
   end
 
 end
